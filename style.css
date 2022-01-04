@@ -275,15 +275,214 @@ header .mobile-burger {
 .container .main .interface .content-center .progress {
     background-color: #111827;
     border-radius: 6px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
 
 }
+
+.container .main .interface .content-center .progress .progress-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.container .main .interface .content-center .progress .progress-info h5 {
+    font-weight: 100;
+    color: rgb(100,116,139);
+    font-size: 14px;
+}
+.container .main .interface .content-center .progress .progress-info h5 i {
+    font-size: 11px;
+    color: rgb(100,116,139);
+}
+.container .main .interface .content-center .progress .progress-data .data {
+    margin: 18px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .main .interface .content-center .progress .progress-data .data div {
+    width: 90%;
+    height: 8px;
+    background-color: rgb(71,85,105);
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.container .main .interface .content-center .progress .progress-data .data div::before {
+    content: '';
+    height: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 75%;
+    background-color: salmon;
+    border-radius: 10px;
+   
+}
+
+.container .main .interface .content-center .progress .progress-data .design div::before {
+    content: '';
+    height: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 85%;
+    background-color: rgb(38, 201, 5);
+    border-radius: 10px;
+   
+}
+
+.container .main .interface .content-center .progress .progress-data .python div::before {
+    content: '';
+    height: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60%;
+    background-color: rgb(17, 96, 214);
+    border-radius: 10px;
+  
+}
+
+.container .main .interface .content-center .progress .progress-data .js div::before {
+    content: '';
+    height: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32%;
+    background-color: rgb(218, 65, 48);
+    border-radius: 10px;
+   
+}
+
+
+.container .main .interface .content-center .progress .progress-data .ios div::before {
+    content: '';
+    height: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 73%;
+    background-color: rgb(182, 22, 182);
+    border-radius: 10px;
+   
+}
+
+.container .main .interface .content-center .progress .progress-data-view {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.container .main .interface .content-center .progress .progress-data-view span{
+    font-size: 12px;
+}
+
+.container .main .interface .content-center .progress .progress-data-view span i {
+    font-size: 8px;
+    transform: translateY(-2px);
+    margin-right: 3px;
+}
+
+.container .main .interface .content-center .progress .progress-data-view .design {
+    color: rgb(38, 201, 5);
+}
+
+.container .main .interface .content-center .progress .progress-data-view .python {
+    color: rgb(17, 96, 214);
+}
+.container .main .interface .content-center .progress .progress-data-view .js {
+    color: rgb(218, 65, 48);
+}
+.container .main .interface .content-center .progress .progress-data-view .ios {
+    color: rgb(182, 22, 182);
+}
+
+
+
+
 
 .container .main .interface .content-center .employees-review {
     background-color: #111827;
     grid-column: span 2;
     margin-top: 20px;
     border-radius: 6px;
+    padding: 20px;
+    padding-top: 10px
 }
+
+
+.container .main .interface .content-center .employees-review .review-info {
+    display: flex;
+    flex-direction: row;
+    align-items :center;
+    justify-content: space-between;
+}
+
+
+.container .main .interface .content-center .employees-review .review-info .add-new {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .main .interface .content-center .employees-review .review-info .add-new .status-view {
+    margin-right: 15px;
+    padding: 0 20px;
+    border: 1px solid rgb(100,116,139);
+    padding-right: 0;
+    border-radius: 7px;
+    
+}
+.container .main .interface .content-center .employees-review .review-info .add-new .status-view span {
+    font-size: 14px;
+}
+
+.container .main .interface .content-center .employees-review .review-info .add-new .status-view i{
+    padding: 10px;
+    border-left: 1px solid rgb(100,116,139);
+    margin-left: 15px;
+    cursor: pointer;
+
+}
+
+
+
+.container .main .interface .content-center .employees-review .review-info .add-new button {
+    background-color: rgb(17, 96, 214);
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.container .main .interface .content-center .employees-review .review-info .add-new button i {
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
 .container .main .content-center {
     height: 200vh;
     width: 70%;
