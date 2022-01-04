@@ -421,8 +421,8 @@ header .mobile-burger {
     grid-column: span 2;
     margin-top: 20px;
     border-radius: 6px;
-    padding: 20px;
-    padding-top: 10px
+    height: auto;
+    padding-bottom: 20px;
 }
 
 
@@ -431,6 +431,11 @@ header .mobile-burger {
     flex-direction: row;
     align-items :center;
     justify-content: space-between;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    
 }
 
 
@@ -447,6 +452,7 @@ header .mobile-burger {
     border: 1px solid rgb(100,116,139);
     padding-right: 0;
     border-radius: 7px;
+    position: relative;
     
 }
 .container .main .interface .content-center .employees-review .review-info .add-new .status-view span {
@@ -459,6 +465,52 @@ header .mobile-burger {
     margin-left: 15px;
     cursor: pointer;
 
+}
+
+
+.container .main .interface .content-center .employees-review .review-info .add-new .status-view .status-category {
+    position: absolute;
+    left: -67px;
+    bottom: 0;
+    width: 150%;
+    height:auto;
+    -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
+    border: 1px solid rgb(100,116,139);
+    transform: translateY(210px);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 9;
+    display: none;
+}
+
+
+.container .main .interface .content-center .employees-review .review-info .add-new .status-view .status-category span {
+    margin: 10px 5px;
+}
+
+.container .main .interface .content-center .employees-review .review-info .add-new .status-view .status-category input{
+    margin-right: 5px;
+}
+
+.container .main .interface .content-center .employees-review .review-info .add-new .status-view .status-category .apply-clear {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    z-index: 999;
+
+}
+
+.container .main .interface .content-center .employees-review .review-info .add-new .status-view .status-category .apply-clear button {
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.container .main .interface .content-center .employees-review .review-info .add-new .status-view .status-category .apply-clear  #btn-clear-status-category {
+    background:rgb(30,41,59)
 }
 
 
@@ -483,14 +535,105 @@ header .mobile-burger {
 
 
 
+.container .main .interface .content-center .employees-review .employees-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(30,41,59);
+    /* -webkit-box-shadow: 0px -1px 5px 0px rgba(34, 60, 80, 0.6) inset;
+-moz-box-shadow: 0px -1px 5px 0px rgba(34, 60, 80, 0.6) inset;
+box-shadow: 0px -1px 5px 0px rgba(34, 60, 80, 0.6) inset; */
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.container .main .interface .content-center .employees-review .employees-name .row-name {
+    width: 30%;
+}
+
+.container .main .interface .content-center .employees-review .employees-name .row-full-names {
+    width: 39%;
+}
+
+.container .main .interface .content-center .employees-review .employees-name .row-address {
+    width: 31%;
+}
+.container .main .interface .content-center .employees-review .employees-name .row-name h4 {
+    color: rgb(100,116,139);
+}
+
+
+
+.container .main .interface .content-center .employees-review .employees-table {
+    height: auto;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.container .main .interface .content-center .employees-review .employees-table table {
+    width: 100%;
+    padding: 10px 20px;
+    height: auto;
+    border-collapse: collapse; 
+}
+
+
+.container .main .interface .content-center .employees-review .employees-table table tr {
+    border: 1px solid rgb(71,85,105);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    
+}
+
+.container .main .interface .content-center .employees-review .employees-table table tr #employee-full-name {
+    width: 25%;
+}
+
+.container .main .interface .content-center .employees-review .employees-table table tr #employee-email {
+    width: 27%;
+}
+
+.container .main .interface .content-center .employees-review .employees-table table tr #employee-status {
+    width: 20%;
+}
+
+.container .main .interface .content-center .employees-review .employees-table table tr .delete-row {
+    width: 27%;
+}
+
+.container .main .interface .content-center .employees-review .employees-table table tr td {
+    padding: 10px;
+}
+
+.container .main .interface .content-center .employees-review .employees-table table tr td img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+.container .main .interface .content-center .employees-review .employees-table table tr .image {
+    width: 8%;
+}
+
+
+.container .main .interface .content-center .employees-review .employees-table table tr .delete-row {
+    width: 7%;
+}
+
+
+
 .container .main .content-center {
-    height: 200vh;
+    height: auto;
     width: 70%;
     padding-top: 20px;
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: repeat(2, 47%);
     grid-template-rows: minmax(170px, 250px) repeat(3, auto);
+    padding-bottom: 20px;
     
 }
 
