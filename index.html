@@ -106,9 +106,9 @@
                     <div class="user-account">
                         <img src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f47d4de7637290765bce495%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D1699%26cropX2%3D3845%26cropY1%3D559%26cropY2%3D2704">
                         <span>Elon Musk</span>
-                        <i class="fas fa-sort-down"></i>
+                        <i id="account-click" class="fas fa-sort-down"></i>
 
-                        <div class="account-info">
+                        <div id="account-info">
                             <h3>Tesla Inc.</h3>
                             <h5>CEO</h5>
                             <a>Settings</a>
@@ -182,11 +182,11 @@
                             <div class="add-new">
                                  <div class="status-view">
                                      <span> All statuses </span>
-                                     <i class="fad fa-angle-down"></i>
+                                     <i id="status-click" class="fad fa-angle-down"></i>
 
-                                     <div class="status-category">
-                                        <span> <input type="checkbox"> Resume review</span>   
-                                        <span> <input type="checkbox"> Task</span>                            
+                                     <div id="statusCategory" class="status-category">
+                                        <span> <input type="checkbox">Resume review</span>   
+                                        <span> <input type="checkbox">Task</span>                            
                                         <span> <input type="checkbox">Final interview</span>   
                                         <span> <input type="checkbox">Screening</span> 
                                         
@@ -198,8 +198,8 @@
 
                                  </div>
                                  <button>
+                                    <i class="fal fa-plus"></i>
                                      Add new 
-                                     <i class="fal fa-plus"></i>
                                  </button>
                             </div>
                         </div>
@@ -217,7 +217,7 @@
                             </div>
 
                             <div class="row-name row-status">
-                                <h4>Statuse</h4>
+                                <h4>Status</h4>
                             </div>
 
                         </div>
@@ -234,7 +234,13 @@
                                   <td id="employee-full-name"> John smith </td>
                                   <td id="employee-email">address@example.com</td>
                                   <td id="employee-status">Task</td>
-                                  <td class="delete-row">---</td>
+                                  <td class="delete-row">
+                                    <i class="far fa-ellipsis-h" data-edit-del-click></i>
+                                    <div class="edit-del"  data-edit-del>
+                                        <span id="row-edit">Edit</span>
+                                        <span id="row-remove">Remove</span>
+                                    </div>
+                                  </td>
 
                                 </tr>
 
@@ -248,8 +254,13 @@
                                   <td id="employee-full-name"> John smith </td>
                                   <td id="employee-email">address@example.com</td>
                                   <td id="employee-status">Task</td>
-                                  <td class="delete-row">---</td>
-
+                                  <td class="delete-row">
+                                    <i class="far fa-ellipsis-h" data-edit-del-click></i>
+                                    <div class="edit-del"  data-edit-del>
+                                        <span id="row-edit">Edit</span>
+                                        <span id="row-remove">Remove</span>
+                                    </div>
+                                </td>
                                 </tr>
 
 
@@ -262,7 +273,13 @@
                                   <td id="employee-full-name"> John smith </td>
                                   <td id="employee-email">address@example.com</td>
                                   <td id="employee-status">Task</td>
-                                  <td class="delete-row">---</td>
+                                  <td class="delete-row">
+                                    <i class="far fa-ellipsis-h" data-edit-del-click></i>
+                                    <div class="edit-del"  data-edit-del>
+                                        <span id="row-edit">Edit</span>
+                                        <span id="row-remove">Remove</span>
+                                    </div>
+                                </td>
 
                                 </tr>
 
@@ -276,8 +293,13 @@
                                   <td id="employee-full-name"> John smith </td>
                                   <td id="employee-email">address@example.com</td>
                                   <td id="employee-status">Task</td>
-                                  <td class="delete-row">---</td>
-
+                                  <td class="delete-row">
+                                    <i class="far fa-ellipsis-h" data-edit-del-click></i>
+                                    <div class="edit-del"  data-edit-del>
+                                        <span id="row-edit">Edit</span>
+                                        <span id="row-remove">Remove</span>
+                                    </div>
+                                </td>
                                 </tr>
 
 
@@ -291,8 +313,13 @@
                                   <td id="employee-full-name"> John smith </td>
                                   <td id="employee-email">address@example.com</td>
                                   <td id="employee-status">Task</td>
-                                  <td class="delete-row">---</td>
-
+                                  <td class="delete-row">
+                                    <i class="far fa-ellipsis-h" data-edit-del-click></i>
+                                    <div class="edit-del"  data-edit-del>
+                                        <span id="row-edit">Edit</span>
+                                        <span id="row-remove">Remove</span>
+                                    </div>
+                                </td>
                                 </tr>
 
                                 <tr>
@@ -304,8 +331,13 @@
                                   <td id="employee-full-name"> John smith </td>
                                   <td id="employee-email">address@example.com</td>
                                   <td id="employee-status">Task</td>
-                                  <td class="delete-row">---</td>
-
+                                  <td class="delete-row">
+                                    <i class="far fa-ellipsis-h" data-edit-del-click></i>
+                                    <div class="edit-del"  data-edit-del>
+                                        <span id="row-edit">Edit</span>
+                                        <span id="row-remove">Remove</span>
+                                    </div>
+                                </td>
                                 </tr>
                                 
 
@@ -327,5 +359,7 @@
         </div>
 
     </section>
+
+    <script src="main.js"></script>
 </body>
 </html>
