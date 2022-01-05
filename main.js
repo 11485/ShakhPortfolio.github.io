@@ -1,4 +1,5 @@
 
+
 let accountInfo = document.getElementById("account-info");
 let accountClick = document.getElementById("account-click");
 let accountIsOpen = false;
@@ -32,6 +33,17 @@ statusClick.addEventListener("click", ()=> {
 
 
 
+let sidebarLeft = document.getElementById("sidebar-left");
+let faBars = document.getElementById("fa-bars");
+let sidebarIsOpen = false;
 
 
-
+faBars.addEventListener("click", ()=> {
+    if(sidebarIsOpen){
+        sidebarLeft.style.left = "-100%";
+        sidebarIsOpen = false;       
+    }else{
+        sidebarLeft.style.left = "0"
+        sidebarIsOpen =  true;
+    }
+})
